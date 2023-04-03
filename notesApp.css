@@ -1,0 +1,114 @@
+/* Set box-sizing property for all elements */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Set global styles */
+  body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  /* Input box styles */
+  #input-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  #addTitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid black;
+  }
+  
+  #addText {
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid black;
+  }
+  
+  #addNote {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  /* Notes list styles */
+  #notes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .note {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: calc(50% - 10px);
+  }
+  
+  .note .title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .note .text {
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .deleteNote,
+  .archiveNote,
+  .editnote {
+    background-color: #f5ba13;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .deleteNote {
+    background-color: #ff8080;
+  }
+  
+  .archiveNote {
+    background-color: #80bfff;
+  }
+  
+  /* Archived notes styles */
+  #archive {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: calc(50% - 10px);
+  }
+  
